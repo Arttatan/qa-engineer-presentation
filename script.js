@@ -286,12 +286,10 @@ function initWhyChooseMe() {
     });
 }
 
-function initSkills() {
-    setupSequentialSection({
-        sectionId: '#skills',
-        nextButtonSelector: '.skills-next-btn',
-        nextSectionId: 'cases',
-    });
+function initSkillsNextButton() {
+    const btn = document.querySelector('.skills-next-btn');
+    if (!btn) return;
+    btn.addEventListener('click', () => scrollToSection('cases'));
 }
 
 // Initialize all features when DOM is loaded
@@ -305,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initExperienceNextButton();
     initWhatILookFor();
     initWhyChooseMe();
-    initSkills();
+    initSkillsNextButton();
     initKeyboardNavigation();
     
     // Show first text block in each revealer
