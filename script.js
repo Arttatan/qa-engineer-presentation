@@ -200,6 +200,15 @@ function initCaseHover() {
     });
 }
 
+// "Next" button behaviour in experience section
+function initExperienceNextButton() {
+    const btn = document.querySelector('.experience-next-btn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+        scrollToSection('what-i-look-for');
+    });
+}
+
 // Keyboard navigation
 function initKeyboardNavigation() {
     document.addEventListener('keydown', (e) => {
@@ -226,7 +235,7 @@ function initWhatILookFor() {
 
     let currentIndex = 0;
 
-    // initial state
+    // initial state: показываем только первый, остальные скрыты
     blocks.forEach((block, index) => {
         if (index === 0) {
             block.classList.add('active');
@@ -240,7 +249,7 @@ function initWhatILookFor() {
             p.addEventListener('click', () => {
                 if (currentIndex >= blocks.length - 1) return;
 
-                blocks[currentIndex].classList.remove('active');
+                // показываем следующий пункт, предыдущие остаются видимыми
                 currentIndex += 1;
                 blocks[currentIndex].classList.add('active');
                 blocks[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -268,6 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initSmoothScroll();
     initCaseHover();
+    initExperienceNextButton();
     initWhatILookFor();
     initKeyboardNavigation();
     
