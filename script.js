@@ -282,6 +282,14 @@ function initWhyChooseMe() {
     setupSequentialSection({
         sectionId: '#why-choose-me',
         nextButtonSelector: '.why-next-btn',
+        nextSectionId: 'skills',
+    });
+}
+
+function initSkills() {
+    setupSequentialSection({
+        sectionId: '#skills',
+        nextButtonSelector: '.skills-next-btn',
         nextSectionId: 'cases',
     });
 }
@@ -297,6 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initExperienceNextButton();
     initWhatILookFor();
     initWhyChooseMe();
+    initSkills();
     initKeyboardNavigation();
     
     // Show first text block in each revealer
