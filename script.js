@@ -224,13 +224,14 @@ function initKeyboardNavigation() {
     });
 }
 
-// Sequential reveal for "What I look for" section
-function initWhatILookFor() {
-    const section = document.querySelector('#what-i-look-for');
+// Generic sequential reveal section (used for "What I look for" and "Why choose me")
+function setupSequentialSection(options) {
+    const { sectionId, nextButtonSelector, nextSectionId } = options;
+    const section = document.querySelector(sectionId);
     if (!section) return;
 
     const blocks = Array.from(section.querySelectorAll('.text-block'));
-    const nextButton = section.querySelector('.what-next-btn');
+    const nextButton = section.querySelector(nextButtonSelector);
     if (!blocks.length || !nextButton) return;
 
     let currentIndex = 0;
@@ -266,7 +267,23 @@ function initWhatILookFor() {
     nextButton.textContent = 'Далее';
     nextButton.style.display = 'none';
     nextButton.style.opacity = '0';
-    nextButton.addEventListener('click', () => scrollToSection('why-choose-me'));
+    nextButton.addEventListener('click', () => scrollToSection(nextSectionId));
+}
+
+function initWhatILookFor() {
+    setupSequentialSection({
+        sectionId: '#what-i-look-for',
+        nextButtonSelector: '.what-next-btn',
+        nextSectionId: 'why-choose-me',
+    });
+}
+
+function initWhyChooseMe() {
+    setupSequentialSection({
+        sectionId: '#why-choose-me',
+        nextButtonSelector: '.why-next-btn',
+        nextSectionId: 'cases',
+    });
 }
 
 // Initialize all features when DOM is loaded
@@ -279,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initCaseHover();
     initExperienceNextButton();
     initWhatILookFor();
+    initWhyChooseMe();
     initKeyboardNavigation();
     
     // Show first text block in each revealer
