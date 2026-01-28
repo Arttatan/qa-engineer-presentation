@@ -100,6 +100,13 @@ body {
     overflow: hidden;
 }
 
+.section-with-next .container {
+    min-height: calc(100vh - 6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .section-background {
     position: absolute;
     top: 0;
@@ -203,6 +210,7 @@ body {
 .section-next {
     margin-top: 3rem;
     text-align: center;
+    padding-bottom: 1.5rem;
 }
 
 /* Section Titles */
