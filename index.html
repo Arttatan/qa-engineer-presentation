@@ -13,14 +13,14 @@
     <!-- Navigation -->
     <nav class="nav-fixed">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">Artem QA</a>
+            <a href="#hero" class="nav-logo">Артем QA</a>
             <div class="nav-links">
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#what-i-look-for">What I look for</a>
-                <a href="#why-choose-me">Why choose me</a>
-                <a href="#cases">Cases</a>
-                <a href="#final">Final</a>
+                <a href="#skills">Навыки</a>
+                <a href="#experience">Опыт</a>
+                <a href="#what-i-look-for">Что я ищу</a>
+                <a href="#why-choose-me">Почему меня</a>
+                <a href="#cases">Кейсы</a>
+                <a href="#final">Финал</a>
             </div>
         </div>
     </nav>
@@ -30,7 +30,7 @@
         <div class="hero-background parallax-bg"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title fade-in-up">Artem — QA Engineer</h1>
+                <h1 class="hero-title fade-in-up">Артем — QA Engineer</h1>
                 <p class="hero-subtitle fade-in-up delay-1">QA Engineer с опытом более 4 лет в тестировании веб, мобильных (iOS/Android) и десктопных приложений.</p>
                 <p class="hero-value fade-in-up delay-2">Есть опыт работы единственным тестировщиком на проекте.</p>
                 <p class="hero-value fade-in-up delay-2">Выстраиваю процесс тестирования с нуля: разрабатываю тестовую стратегию, составляю планы тестирования, внедряю QA-метрики и настраиваю процессы взаимодействия с командой.</p>
@@ -38,6 +38,72 @@
                 <p class="hero-value fade-in-up delay-2">Внимателен к деталям, умею находить общий язык с разработчиками и выстраивать эффективное взаимодействие.</p>
                 <p class="hero-value fade-in-up delay-2">Применяю современные инструменты и методологии, изучаю новые технологии и развиваю навыки для высокого качества продукта и собственного профессионального роста.</p>
                 <button class="btn-primary fade-in-up delay-3" onclick="scrollToSection('experience')">Далее</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="section-background parallax-bg"></div>
+        <div class="container">
+            <h2 class="section-title">Опыт работы</h2>
+
+            <div class="experience-item active">
+                <div class="experience-header" onclick="toggleExperience(this)">
+                    <div>
+                        <h3 class="experience-company">Белая Радуга — QA Engineer</h3>
+                        <p class="experience-subtitle">Сеть стоматологических клиник, 6 филиалов</p>
+                    </div>
+                    <span class="experience-arrow">▼</span>
+                </div>
+                <div class="experience-content">
+                    <p>Работаю с МИС (медицинской информационной системой), которая хранит всю информацию о пациентах: рентгены, планы лечения, история визитов.</p>
+                    <p>Тестирую веб-программу, включающую расписание врачей, запись пациентов, контроль визитов, отчёты и оплату услуг.</p>
+                    <p>Тестирую мобильное приложение для пациентов: запись на приём, оплата, просмотр истории лечения.</p>
+                    <p>Полностью проверял новый сайт клиники через Figma, сверяя дизайн с макетами.</p>
+                    <p>Активно помогаю пользователям программы и собираю обратную связь, чтобы улучшать продукт.</p>
+                    <p>Использую Яндекс.Метрику для сбора аналитики по использованию программы.</p>
+                    <p>Работаем по <span class="highlight-keyword">Agile</span> в двухнедельных спринтах, тесно взаимодействуя с командой для достижения целей и быстрой обратной связи.</p>
+                    <p>Инструменты: <span class="highlight-keyword">KaiTen</span>, <span class="highlight-keyword">Postman</span> для тестирования API, <span class="highlight-keyword">MySQL</span>, <span class="highlight-keyword">Figma</span>, <span class="highlight-keyword">Confluence</span>.</p>
+                    <p>Провожу функциональное тестирование, регрессию, UI/UX.</p>
+                    <p>Создаю автотесты для проверки бэкенда на <span class="highlight-keyword">Node.js</span> и UI автотесты на <span class="highlight-keyword">Python Playwright</span>.</p>
+                    <p>Создаю и использую чек-листы, тест-кейсы и документацию.</p>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header" onclick="toggleExperience(this)">
+                    <div>
+                        <h3 class="experience-company">For You — QA Engineer</h3>
+                        <p class="experience-subtitle">Стартап, приложение для красоты (массаж лица)</p>
+                    </div>
+                    <span class="experience-arrow">▼</span>
+                </div>
+                <div class="experience-content">
+                    <p><span class="highlight-keyword">Agile/Scrum</span>, двухнедельные спринты.</p>
+                    <p>Разработка тест-кейсов на основе бизнес-требований, использование техник тест-дизайна.</p>
+                    <p>Тестирование на реальных устройствах и через Android Studio.</p>
+                    <p>Фронтенд и бэкенд: функциональное тестирование, UI/UX, регресс, API тестирование (<span class="highlight-keyword">Postman</span>), SQL-запросы.</p>
+                    <p>Баг-репорты и работа с <span class="highlight-keyword">JIRA</span>, участие в регрессионном тестировании и релизах.</p>
+                    <p>Ретроспектива и совместная работа с командой для улучшения процессов.</p>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header" onclick="toggleExperience(this)">
+                    <div>
+                        <h3 class="experience-company">Conversion Advocates — QA Engineer</h3>
+                        <p class="experience-subtitle">IT-компания, A/B тестирование</p>
+                    </div>
+                    <span class="experience-arrow">▼</span>
+                </div>
+                <div class="experience-content">
+                    <p>Проверка изменений на сайте перед A/B тестированием для увеличения конверсии.</p>
+                    <p>Инструменты: <span class="highlight-keyword">Figma</span>, <span class="highlight-keyword">BrowserStack</span>, <span class="highlight-keyword">ClickUp</span>.</p>
+                    <p>Тестирование веб- и мобильной версии на разных устройствах и браузерах.</p>
+                    <p>Ведение чек-листов, тест-кейсов, баг-репортов.</p>
+                    <p>Тесное взаимодействие с менеджерами, аналитиками, дизайнерами и разработчиками.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -94,131 +160,6 @@
         </div>
     </section>
 
-    <!-- Main Description Section -->
-    <section id="main-description" class="section description-section">
-        <div class="section-background parallax-bg"></div>
-        <div class="container">
-            <div class="text-revealer">
-                <div class="text-block active">
-                    <p>QA Engineer с опытом более 4 лет в тестировании веб, мобильных (iOS/Android) и десктопных приложений.</p>
-                </div>
-                <div class="text-block">
-                    <p>Есть опыт работы единственным тестировщиком на проекте.</p>
-                </div>
-                <div class="text-block">
-                    <p>Выстраиваю процесс тестирования с нуля: разрабатываю тестовую стратегию, составляю планы тестирования, внедряю QA-метрики и настраиваю процессы взаимодействия с командой.</p>
-                </div>
-                <div class="text-block">
-                    <p>Помимо ручного тестирования пишу автотесты и интегрирую их в пайплайн, что повышает стабильность продукта.</p>
-                </div>
-                <div class="text-block">
-                    <p>Внимателен к деталям, умею находить общий язык с разработчиками и выстраивать эффективное взаимодействие.</p>
-                </div>
-                <div class="text-block">
-                    <p>Применяю современные инструменты и методологии, изучаю новые технологии и развиваю навыки для высокого качества продукта и собственного профессионального роста.</p>
-                </div>
-                <button class="btn-next" onclick="revealNext(this)">Далее →</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section experience-section">
-        <div class="section-background parallax-bg"></div>
-        <div class="container">
-            <h2 class="section-title">Опыт работы</h2>
-            
-            <div class="experience-item">
-                <h3 class="experience-company">Белая Радуга — QA Engineer</h3>
-                <p class="experience-subtitle">Сеть стоматологических клиник, 6 филиалов</p>
-                <div class="text-revealer">
-                    <div class="text-block active">
-                        <p>Работаю с МИС (медицинской информационной системой), которая хранит всю информацию о пациентах: рентгены, планы лечения, история визитов.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Тестирую веб-программу, включающую расписание врачей, запись пациентов, контроль визитов, отчёты и оплату услуг.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Тестирую мобильное приложение для пациентов: запись на приём, оплата, просмотр истории лечения.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Полностью проверял новый сайт клиники через Figma, сверяя дизайн с макетами.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Активно помогаю пользователям программы и собираю обратную связь, чтобы улучшать продукт.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Использую Яндекс.Метрику для сбора аналитики по использованию программы.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Работаем по <span class="highlight-keyword">Agile</span> в двухнедельных спринтах, тесно взаимодействуя с командой для достижения целей и быстрой обратной связи.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Инструменты: <span class="highlight-keyword">KaiTen</span>, <span class="highlight-keyword">Postman</span> для тестирования API, <span class="highlight-keyword">MySQL</span>, <span class="highlight-keyword">Figma</span>, <span class="highlight-keyword">Confluence</span>.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Провожу функциональное тестирование, регрессию, UI/UX.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Создаю автотесты для проверки бэкенда на <span class="highlight-keyword">Node.js</span> и UI автотесты на <span class="highlight-keyword">Python Playwright</span>.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Создаю и использую чек-листы, тест-кейсы и документацию.</p>
-                    </div>
-                    <button class="btn-next" onclick="revealNext(this)">Далее →</button>
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <h3 class="experience-company">For You — QA Engineer</h3>
-                <p class="experience-subtitle">Стартап, приложение для красоты (массаж лица)</p>
-                <div class="text-revealer">
-                    <div class="text-block active">
-                        <p><span class="highlight-keyword">Agile/Scrum</span>, двухнедельные спринты.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Разработка тест-кейсов на основе бизнес-требований, использование техник тест-дизайна.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Тестирование на реальных устройствах и через Android Studio.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Фронтенд и бэкенд: функциональное тестирование, UI/UX, регресс, API тестирование (<span class="highlight-keyword">Postman</span>), SQL-запросы.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Баг-репорты и работа с <span class="highlight-keyword">JIRA</span>, участие в регрессионном тестировании и релизах.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Ретроспектива и совместная работа с командой для улучшения процессов.</p>
-                    </div>
-                    <button class="btn-next" onclick="revealNext(this)">Далее →</button>
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <h3 class="experience-company">Conversion Advocates — QA Engineer</h3>
-                <p class="experience-subtitle">IT-компания, A/B тестирование</p>
-                <div class="text-revealer">
-                    <div class="text-block active">
-                        <p>Проверка изменений на сайте перед A/B тестированием для увеличения конверсии.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Инструменты: <span class="highlight-keyword">Figma</span>, <span class="highlight-keyword">BrowserStack</span>, <span class="highlight-keyword">ClickUp</span>.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Тестирование веб- и мобильной версии на разных устройствах и браузерах.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Ведение чек-листов, тест-кейсов, баг-репортов.</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Тесное взаимодействие с менеджерами, аналитиками, дизайнерами и разработчиками.</p>
-                    </div>
-                    <button class="btn-next" onclick="revealNext(this)">Далее →</button>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- What I Look For Section -->
     <section id="what-i-look-for" class="section what-i-look-for-section">

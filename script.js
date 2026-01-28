@@ -59,6 +59,26 @@ function toggleCase(titleElement) {
     }
 }
 
+// Toggle experience accordion
+function toggleExperience(headerElement) {
+    const item = headerElement.closest('.experience-item');
+    const isActive = item.classList.contains('active');
+
+    // Close other items
+    document.querySelectorAll('.experience-item').forEach(other => {
+        if (other !== item) {
+            other.classList.remove('active');
+        }
+    });
+
+    // Toggle current
+    if (isActive) {
+        item.classList.remove('active');
+    } else {
+        item.classList.add('active');
+    }
+}
+
 // Parallax effect for backgrounds
 function initParallax() {
     const parallaxElements = document.querySelectorAll('.parallax-bg');
