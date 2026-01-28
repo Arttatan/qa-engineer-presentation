@@ -215,6 +215,51 @@ function initKeyboardNavigation() {
     });
 }
 
+// Sequential reveal for "What I look for" section
+function initWhatILookFor() {
+    const section = document.querySelector('#what-i-look-for');
+    if (!section) return;
+
+    const blocks = Array.from(section.querySelectorAll('.text-block'));
+    const nextButton = section.querySelector('.what-next-btn');
+    if (!blocks.length || !nextButton) return;
+
+    let currentIndex = 0;
+
+    // initial state
+    blocks.forEach((block, index) => {
+        if (index === 0) {
+            block.classList.add('active');
+        } else {
+            block.classList.remove('active');
+        }
+
+        const p = block.querySelector('p');
+        if (p) {
+            p.style.cursor = 'pointer';
+            p.addEventListener('click', () => {
+                if (currentIndex >= blocks.length - 1) return;
+
+                blocks[currentIndex].classList.remove('active');
+                currentIndex += 1;
+                blocks[currentIndex].classList.add('active');
+                blocks[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                if (currentIndex === blocks.length - 1) {
+                    nextButton.style.display = 'inline-block';
+                    nextButton.style.opacity = '1';
+                }
+            });
+        }
+    });
+
+    // configure final next button
+    nextButton.textContent = 'Далее';
+    nextButton.style.display = 'none';
+    nextButton.style.opacity = '0';
+    nextButton.addEventListener('click', () => scrollToSection('why-choose-me'));
+}
+
 // Initialize all features when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     initParallax();
@@ -223,6 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initSmoothScroll();
     initCaseHover();
+    initWhatILookFor();
     initKeyboardNavigation();
     
     // Show first text block in each revealer
