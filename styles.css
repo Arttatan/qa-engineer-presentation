@@ -442,6 +442,11 @@ body {
     background: var(--bg-light);
 }
 
+/* Automation stack section */
+.automation-stack-section {
+    background: var(--bg-dark);
+}
+
 /* Cases Section */
 .cases-section {
     background: var(--bg-dark);

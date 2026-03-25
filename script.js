@@ -290,6 +290,14 @@ function initSkills() {
     setupSequentialSection({
         sectionId: '#skills',
         nextButtonSelector: '.skills-next-btn',
+        nextSectionId: 'automation-stack',
+    });
+}
+
+function initAutomationStack() {
+    setupSequentialSection({
+        sectionId: '#automation-stack',
+        nextButtonSelector: '.automation-next-btn',
         nextSectionId: 'cases',
     });
 }
@@ -306,6 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initWhatILookFor();
     initWhyChooseMe();
     initSkills();
+    initAutomationStack();
     initKeyboardNavigation();
     
     // Show first text block in each revealer
