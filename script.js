@@ -100,23 +100,6 @@ function initParallax() {
     });
 }
 
-// Highlight keywords animation
-function initKeywordHighlight() {
-    const keywords = document.querySelectorAll('.highlight-keyword');
-    
-    keywords.forEach(keyword => {
-        keyword.addEventListener('mouseenter', function() {
-            this.style.textShadow = '0 0 20px rgba(0, 212, 255, 1)';
-            this.style.transform = 'scale(1.05)';
-        });
-        
-        keyword.addEventListener('mouseleave', function() {
-            this.style.textShadow = '';
-            this.style.transform = '';
-        });
-    });
-}
-
 // Tool icons animation on reveal
 function initToolIcons() {
     const observer = new IntersectionObserver((entries) => {
@@ -263,8 +246,7 @@ function setupSequentialSection(options) {
         }
     });
 
-    // configure final next button
-    nextButton.textContent = 'Далее';
+    // Label comes from data-i18n / i18n.js (do not overwrite "Далее" / "Next")
     nextButton.style.display = 'none';
     nextButton.style.opacity = '0';
     nextButton.addEventListener('click', () => scrollToSection(nextSectionId));
@@ -305,7 +287,6 @@ function initAutomationStack() {
 // Initialize all features when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     initParallax();
-    initKeywordHighlight();
     initToolIcons();
     initNavigation();
     initSmoothScroll();

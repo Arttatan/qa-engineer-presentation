@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artem — QA Engineer</title>
+    <title data-i18n="page_title">Artem — QA Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +13,17 @@
     <!-- Navigation -->
     <nav class="nav-fixed">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">Артем QA</a>
+            <a href="#hero" class="nav-logo" data-i18n="nav_logo">Артем QA</a>
             <div class="nav-links">
-                <a href="#skills">Навыки</a>
-                <a href="#automation-stack">Стек</a>
-                <a href="#experience">Опыт</a>
-                <a href="#what-i-look-for">Что я ищу</a>
-                <a href="#why-choose-me">Почему меня</a>
-                <a href="#cases">Кейсы</a>
-                <a href="#final">Финал</a>
+                <a href="#skills" data-i18n="nav_skills">Навыки</a>
+                <a href="#automation-stack" data-i18n="nav_stack">Стек</a>
+                <a href="#experience" data-i18n="nav_exp">Опыт</a>
+                <a href="#what-i-look-for" data-i18n="nav_what">Что я ищу</a>
+                <a href="#why-choose-me" data-i18n="nav_why">Почему меня</a>
+                <a href="#cases" data-i18n="nav_cases">Кейсы</a>
+                <a href="#final" data-i18n="nav_final">Финал</a>
             </div>
+            <button type="button" id="lang-toggle" class="lang-toggle" aria-label="Switch to English">Eng</button>
         </div>
     </nav>
 
@@ -31,16 +32,16 @@
         <div class="hero-background parallax-bg"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title fade-in-up">Артем — QA Engineer</h1>
-                <p class="hero-subtitle fade-in-up delay-1">QA Engineer с опытом более 4 лет в тестировании веб, мобильных (iOS/Android) и десктопных приложений.</p>
-                <p class="hero-value fade-in-up delay-2">Есть опыт работы единственным тестировщиком на проекте.</p>
-                <p class="hero-value fade-in-up delay-2">Выстраиваю процесс тестирования с нуля: разрабатываю тестовую стратегию, составляю планы тестирования, внедряю QA-метрики и настраиваю процессы взаимодействия с командой.</p>
-                <p class="hero-value fade-in-up delay-2">Помимо ручного тестирования пишу автотесты и интегрирую их в пайплайн, что повышает стабильность продукта.</p>
-                <p class="hero-value fade-in-up delay-2">Внимателен к деталям, умею находить общий язык с разработчиками и выстраивать эффективное взаимодействие.</p>
-                <p class="hero-value fade-in-up delay-2">Применяю современные инструменты и методологии, изучаю новые технологии и развиваю навыки для высокого качества продукта и собственного профессионального роста.</p>
+                <h1 class="hero-title fade-in-up" data-i18n="hero_title">Артем — QA Engineer</h1>
+                <p class="hero-subtitle fade-in-up delay-1" data-i18n="hero_p1">QA Engineer с опытом более 4 лет в тестировании веб, мобильных (iOS/Android) и десктопных приложений.</p>
+                <p class="hero-value fade-in-up delay-2" data-i18n="hero_p2">Есть опыт работы единственным тестировщиком на проекте.</p>
+                <p class="hero-value fade-in-up delay-2" data-i18n="hero_p3">Выстраиваю процесс тестирования с нуля: разрабатываю тестовую стратегию, составляю планы тестирования, внедряю QA-метрики и настраиваю процессы взаимодействия с командой.</p>
+                <p class="hero-value fade-in-up delay-2" data-i18n="hero_p4">Помимо ручного тестирования пишу автотесты и интегрирую их в пайплайн, что повышает стабильность продукта.</p>
+                <p class="hero-value fade-in-up delay-2" data-i18n="hero_p5">Внимателен к деталям, умею находить общий язык с разработчиками и выстраивать эффективное взаимодействие.</p>
+                <p class="hero-value fade-in-up delay-2" data-i18n="hero_p6">Применяю современные инструменты и методологии, изучаю новые технологии и развиваю навыки для высокого качества продукта и собственного профессионального роста.</p>
             </div>
             <div class="section-next fade-in-up delay-3">
-                <button class="btn-next" onclick="scrollToSection('experience')">Далее</button>
+                <button class="btn-next" data-i18n="btn_next" onclick="scrollToSection('experience')">Далее</button>
             </div>
         </div>
     </section>
@@ -49,17 +50,17 @@
     <section id="experience" class="section experience-section section-with-next">
         <div class="section-background parallax-bg"></div>
         <div class="container">
-            <h2 class="section-title">Опыт работы</h2>
+            <h2 class="section-title" data-i18n="exp_section_title">Опыт работы</h2>
 
             <div class="experience-item">
                 <div class="experience-header" onclick="toggleExperience(this)">
                     <div>
-                        <h3 class="experience-company">Белая Радуга — QA Engineer</h3>
-                        <p class="experience-subtitle">Сеть стоматологических клиник, 6 филиалов</p>
+                        <h3 class="experience-company" data-i18n="exp_br_company">Белая Радуга — QA Engineer</h3>
+                        <p class="experience-subtitle" data-i18n="exp_br_sub">Сеть стоматологических клиник, 6 филиалов</p>
                     </div>
                     <span class="experience-arrow">▼</span>
                 </div>
-                <div class="experience-content">
+                <div class="experience-content" data-i18n="exp_br_content" data-i18n-html>
                     <p>Работаю с МИС (медицинской информационной системой), которая хранит всю информацию о пациентах: рентгены, планы лечения, история визитов.</p>
                     <p>Тестирую веб-программу, включающую расписание врачей, запись пациентов, контроль визитов, отчёты и оплату услуг.</p>
                     <p>Тестирую мобильное приложение для пациентов: запись на приём, оплата, просмотр истории лечения.</p>
@@ -77,12 +78,12 @@
             <div class="experience-item">
                 <div class="experience-header" onclick="toggleExperience(this)">
                     <div>
-                        <h3 class="experience-company">For You — QA Engineer</h3>
-                        <p class="experience-subtitle">Стартап, приложение для красоты (массаж лица)</p>
+                        <h3 class="experience-company" data-i18n="exp_fy_company">For You — QA Engineer</h3>
+                        <p class="experience-subtitle" data-i18n="exp_fy_sub">Стартап, приложение для красоты (массаж лица)</p>
                     </div>
                     <span class="experience-arrow">▼</span>
                 </div>
-                <div class="experience-content">
+                <div class="experience-content" data-i18n="exp_fy_content" data-i18n-html>
                     <p><span class="highlight-keyword">Agile/Scrum</span>, двухнедельные спринты.</p>
                     <p>Разработка тест-кейсов на основе бизнес-требований, использование техник тест-дизайна.</p>
                     <p>Тестирование на реальных устройствах и через Android Studio.</p>
@@ -95,12 +96,12 @@
             <div class="experience-item">
                 <div class="experience-header" onclick="toggleExperience(this)">
                     <div>
-                        <h3 class="experience-company">Conversion Advocates — QA Engineer</h3>
-                        <p class="experience-subtitle">IT-компания, A/B тестирование</p>
+                        <h3 class="experience-company" data-i18n="exp_ca_company">Conversion Advocates — QA Engineer</h3>
+                        <p class="experience-subtitle" data-i18n="exp_ca_sub">IT-компания, A/B тестирование</p>
                     </div>
                     <span class="experience-arrow">▼</span>
                 </div>
-                <div class="experience-content">
+                <div class="experience-content" data-i18n="exp_ca_content" data-i18n-html>
                     <p>Проверка изменений на сайте перед A/B тестированием для увеличения конверсии.</p>
                     <p>Инструменты: <span class="highlight-keyword">Figma</span>, <span class="highlight-keyword">BrowserStack</span>, <span class="highlight-keyword">ClickUp</span>.</p>
                     <p>Тестирование веб- и мобильной версии на разных устройствах и браузерах.</p>
@@ -110,7 +111,7 @@
             </div>
 
             <div class="section-next">
-                <button class="btn-next experience-next-btn">Далее</button>
+                <button class="btn-next experience-next-btn" data-i18n="btn_next">Далее</button>
             </div>
         </div>
     </section>
@@ -119,26 +120,26 @@
     <section id="what-i-look-for" class="section what-i-look-for-section section-with-next">
         <div class="section-background parallax-bg"></div>
         <div class="container">
-            <h2 class="section-title">Что я ищу</h2>
+            <h2 class="section-title" data-i18n="what_title">Что я ищу</h2>
             <div class="text-revealer">
                 <div class="text-block active">
-                    <p>Удалённую работу в компании с интересным проектом, где можно применять мой опыт в тестировании веб и мобильных приложений.</p>
+                    <p data-i18n="what_p1">Удалённую работу в компании с интересным проектом, где можно применять мой опыт в тестировании веб и мобильных приложений.</p>
                 </div>
                 <div class="text-block">
-                    <p>Команду, где ценится взаимодействие, обмен знаниями и совместное решение сложных задач.</p>
+                    <p data-i18n="what_p2">Команду, где ценится взаимодействие, обмен знаниями и совместное решение сложных задач.</p>
                 </div>
                 <div class="text-block">
-                    <p>Возможность развивать навыки автоматизации тестирования и работы с современными инструментами, участвовать в улучшении процессов QA.</p>
+                    <p data-i18n="what_p3">Возможность развивать навыки автоматизации тестирования и работы с современными инструментами, участвовать в улучшении процессов QA.</p>
                 </div>
                 <div class="text-block">
-                    <p>Готов работать в командах с неполной структурой, недостаточными требованиями или процессными проблемами, и помогать выстраивать процессы, улучшать документацию и качество продукта.</p>
+                    <p data-i18n="what_p4">Готов работать в командах с неполной структурой, недостаточными требованиями или процессными проблемами, и помогать выстраивать процессы, улучшать документацию и качество продукта.</p>
                 </div>
                 <div class="text-block">
-                    <p>Среду, где можно приносить реальную пользу пользователям, собирать обратную связь и улучшать продукт на основе данных.</p>
+                    <p data-i18n="what_p5">Среду, где можно приносить реальную пользу пользователям, собирать обратную связь и улучшать продукт на основе данных.</p>
                 </div>
             </div>
             <div class="section-next">
-                <button class="btn-next what-next-btn">Далее</button>
+                <button class="btn-next what-next-btn" data-i18n="btn_next">Далее</button>
             </div>
         </div>
     </section>
@@ -147,35 +148,35 @@
     <section id="why-choose-me" class="section why-choose-me-section section-with-next">
         <div class="section-background parallax-bg"></div>
         <div class="container">
-            <h2 class="section-title">Почему меня стоит выбрать</h2>
+            <h2 class="section-title" data-i18n="why_title">Почему меня стоит выбрать</h2>
             <div class="text-revealer">
                 <div class="text-block active">
-                    <p>Опыт на уровне <strong>Middle / Senior</strong>: более 4 лет в QA, продуктовые компании и стартапы; тестирование веду как полноценное направление в жизненном цикле продукта, а не только точечные проверки перед релизом.</p>
+                    <p data-i18n="why_p1" data-i18n-html>Опыт на уровне <strong>Middle / Senior</strong>: более 4 лет в QA, продуктовые компании и стартапы; тестирование веду как полноценное направление в жизненном цикле продукта, а не только точечные проверки перед релизом.</p>
                 </div>
                 <div class="text-block">
-                    <p>Умею <strong>выстраивать процесс тестирования с нуля</strong>: стратегия и планы, чек-листы и метрики, единый формат багов и статусы, прозрачная коммуникация с разработкой и продуктом — чтобы качество было предсказуемым, а не «надеждой на удачу».</p>
+                    <p data-i18n="why_p2" data-i18n-html>Умею <strong>выстраивать процесс тестирования с нуля</strong>: стратегия и планы, чек-листы и метрики, единый формат багов и статусы, прозрачная коммуникация с разработкой и продуктом — чтобы качество было предсказуемым, а не «надеждой на удачу».</p>
                 </div>
                 <div class="text-block">
-                    <p><strong>Внедряю автоматизацию осмысленно</strong>: выделяю критичные сценарии, закрываю API на <span class="highlight-keyword">Node.js</span>, UI на <span class="highlight-keyword">Python Playwright</span>, подключаю прогоны к <span class="highlight-keyword">CI/CD</span> — регресс и smoke дают быстрый сигнал в пайплайне и разгружают команду от рутины.</p>
+                    <p data-i18n="why_p3" data-i18n-html><strong>Внедряю автоматизацию осмысленно</strong>: выделяю критичные сценарии, закрываю API на <span class="highlight-keyword">Node.js</span>, UI на <span class="highlight-keyword">Python Playwright</span>, подключаю прогоны к <span class="highlight-keyword">CI/CD</span> — регресс и smoke дают быстрый сигнал в пайплайне и разгружают команду от рутины.</p>
                 </div>
                 <div class="text-block">
-                    <p>Тот же стек, что в разделе автоматизации: <span class="highlight-keyword">Node.js</span> для API-тестов, <span class="highlight-keyword">Playwright</span> для UI, <span class="highlight-keyword">Postman</span> для контрактов, <span class="highlight-keyword">SQL</span> и <span class="highlight-keyword">MySQL</span> для проверки данных. <span class="highlight-keyword">TypeScript</span> углубляю в связке с автотестами; <span class="highlight-keyword">Cypress</span> готов освоить как смену инструмента на уровне Playwright — под стек команды.</p>
+                    <p data-i18n="why_p4" data-i18n-html>Тот же стек, что в разделе автоматизации: <span class="highlight-keyword">Node.js</span> для API-тестов, <span class="highlight-keyword">Playwright</span> для UI, <span class="highlight-keyword">Postman</span> для контрактов, <span class="highlight-keyword">SQL</span> и <span class="highlight-keyword">MySQL</span> для проверки данных. <span class="highlight-keyword">TypeScript</span> углубляю в связке с автотестами; <span class="highlight-keyword">Cypress</span> готов освоить как смену инструмента на уровне Playwright — под стек команды.</p>
                 </div>
                 <div class="text-block">
-                    <p>Опыт с веб и мобильными приложениями, <span class="highlight-keyword">API</span> и базами данных — от согласования контрактов до регресса по интерфейсу и данным в БД.</p>
+                    <p data-i18n="why_p5" data-i18n-html>Опыт с веб и мобильными приложениями, <span class="highlight-keyword">API</span> и базами данных — от согласования контрактов до регресса по интерфейсу и данным в БД.</p>
                 </div>
                 <div class="text-block">
-                    <p><span class="highlight-keyword">Agile</span> и <span class="highlight-keyword">Scrum</span>, двухнедельные спринты; веду и актуализирую документацию по тестам, участвую в ревью автотестов и настройке пайплайна под стабильные прогоны.</p>
+                    <p data-i18n="why_p6" data-i18n-html><span class="highlight-keyword">Agile</span> и <span class="highlight-keyword">Scrum</span>, двухнедельные спринты; веду и актуализирую документацию по тестам, участвую в ревью автотестов и настройке пайплайна под стабильные прогоны.</p>
                 </div>
                 <div class="text-block">
-                    <p>Помогаю коллегам осваивать практики QA и автоматизации, снижаю флейки и дублирование в тестах — чтобы команда могла опираться на автоматизацию в ежедневной работе.</p>
+                    <p data-i18n="why_p7">Помогаю коллегам осваивать практики QA и автоматизации, снижаю флейки и дублирование в тестах — чтобы команда могла опираться на автоматизацию в ежедневной работе.</p>
                 </div>
                 <div class="text-block">
-                    <p>Ответственный, внимательный к деталям; умею доводить продукт до качества и отстаивать интересы пользователя в диалоге с командой.</p>
+                    <p data-i18n="why_p8">Ответственный, внимательный к деталям; умею доводить продукт до качества и отстаивать интересы пользователя в диалоге с командой.</p>
                 </div>
             </div>
             <div class="section-next">
-                <button class="btn-next why-next-btn">Далее</button>
+                <button class="btn-next why-next-btn" data-i18n="btn_next">Далее</button>
             </div>
         </div>
     </section>
@@ -184,29 +185,29 @@
     <section id="skills" class="section skills-section section-with-next">
         <div class="section-background parallax-bg"></div>
         <div class="container">
-            <h2 class="section-title">Навыки и инструменты</h2>
+            <h2 class="section-title" data-i18n="skills_title">Навыки и инструменты</h2>
             <div class="text-revealer">
                 <div class="text-block active">
-                    <p>Ручное тестирование: функциональное, регресс, UI/UX</p>
+                    <p data-i18n="skills_p1">Ручное тестирование: функциональное, регресс, UI/UX</p>
                 </div>
                 <div class="text-block">
-                    <p>Автоматизация: <span class="highlight-keyword">Node.js</span> (API), <span class="highlight-keyword">Python Playwright</span> (UI)</p>
+                    <p data-i18n="skills_p2" data-i18n-html>Автоматизация: <span class="highlight-keyword">Node.js</span> (API), <span class="highlight-keyword">Python Playwright</span> (UI)</p>
                 </div>
                 <div class="text-block">
-                    <p>Инструменты: <span class="highlight-keyword">YouTrack</span>, <span class="highlight-keyword">KaiTen</span>, <span class="highlight-keyword">Postman</span>, <span class="highlight-keyword">MySQL</span>, <span class="highlight-keyword">Figma</span>, <span class="highlight-keyword">Confluence</span></p>
+                    <p data-i18n="skills_p3" data-i18n-html>Инструменты: <span class="highlight-keyword">YouTrack</span>, <span class="highlight-keyword">KaiTen</span>, <span class="highlight-keyword">Postman</span>, <span class="highlight-keyword">MySQL</span>, <span class="highlight-keyword">Figma</span>, <span class="highlight-keyword">Confluence</span></p>
                 </div>
                 <div class="text-block">
-                    <p>Методы: <span class="highlight-keyword">Agile</span>, <span class="highlight-keyword">Scrum</span>, двухнедельные спринты</p>
+                    <p data-i18n="skills_p4" data-i18n-html>Методы: <span class="highlight-keyword">Agile</span>, <span class="highlight-keyword">Scrum</span>, двухнедельные спринты</p>
                 </div>
                 <div class="text-block">
-                    <p>Работа с документацией: чек-листы, тест-кейсы, баг-репорты</p>
+                    <p data-i18n="skills_p5">Работа с документацией: чек-листы, тест-кейсы, баг-репорты</p>
                 </div>
                 <div class="text-block">
-                    <p>Эффективно взаимодействую с разработчиками, аналитиками, продактами.</p>
+                    <p data-i18n="skills_p6">Эффективно взаимодействую с разработчиками, аналитиками, продактами.</p>
                 </div>
             </div>
             <div class="section-next">
-                <button class="btn-next skills-next-btn">Далее</button>
+                <button class="btn-next skills-next-btn" data-i18n="btn_next">Далее</button>
             </div>
         </div>
     </section>
@@ -215,29 +216,29 @@
     <section id="automation-stack" class="section automation-stack-section section-with-next">
         <div class="section-background parallax-bg"></div>
         <div class="container">
-            <h2 class="section-title">Стек автоматизации</h2>
+            <h2 class="section-title" data-i18n="auto_title">Стек автоматизации</h2>
             <div class="text-revealer">
                 <div class="text-block active">
-                    <p>Стек автоматизации: <span class="highlight-keyword">Node.js</span> для API-тестов, <span class="highlight-keyword">Python Playwright</span> для UI, <span class="highlight-keyword">Postman</span> для проверки контрактов, <span class="highlight-keyword">SQL</span> и работа с <span class="highlight-keyword">MySQL</span>. Автотесты подключаю к <span class="highlight-keyword">CI/CD</span> — регресс и smoke дают быстрый сигнал в пайплайне.</p>
+                    <p data-i18n="auto_p1" data-i18n-html>Стек автоматизации: <span class="highlight-keyword">Node.js</span> для API-тестов, <span class="highlight-keyword">Python Playwright</span> для UI, <span class="highlight-keyword">Postman</span> для проверки контрактов, <span class="highlight-keyword">SQL</span> и работа с <span class="highlight-keyword">MySQL</span>. Автотесты подключаю к <span class="highlight-keyword">CI/CD</span> — регресс и smoke дают быстрый сигнал в пайплайне.</p>
                 </div>
                 <div class="text-block">
-                    <p><span class="highlight-keyword">TypeScript</span> углубляю в связке с автотестами и типизацией кода. Современный E2E-инструмент <span class="highlight-keyword">Cypress</span> воспринимаю как смену инструмента на том же уровне абстракции, что Playwright — готов быстро освоить под стек команды.</p>
+                    <p data-i18n="auto_p2" data-i18n-html><span class="highlight-keyword">TypeScript</span> углубляю в связке с автотестами и типизацией кода. Современный E2E-инструмент <span class="highlight-keyword">Cypress</span> воспринимаю как смену инструмента на том же уровне абстракции, что Playwright — готов быстро освоить под стек команды.</p>
                 </div>
                 <div class="text-block">
-                    <p><strong>Отладка:</strong> в Postman воспроизвожу запросы, сверяю статус-коды, заголовки и тело ответа с ТЗ и логами — так отличаю ошибку контракта от ошибки данных и сужаю зону поиска причины.</p>
+                    <p data-i18n="auto_p3" data-i18n-html><strong>Отладка:</strong> в Postman воспроизвожу запросы, сверяю статус-коды, заголовки и тело ответа с ТЗ и логами — так отличаю ошибку контракта от ошибки данных и сужаю зону поиска причины.</p>
                 </div>
                 <div class="text-block">
-                    <p><strong>Отладка:</strong> в браузере использую <span class="highlight-keyword">DevTools</span>: вкладка Network для цепочки запросов, Console для ошибок фронта — помогает отделить клиентский сбой от серверного до эскалации разработчикам.</p>
+                    <p data-i18n="auto_p4" data-i18n-html><strong>Отладка:</strong> в браузере использую <span class="highlight-keyword">DevTools</span>: вкладка Network для цепочки запросов, Console для ошибок фронта — помогает отделить клиентский сбой от серверного до эскалации разработчикам.</p>
                 </div>
                 <div class="text-block">
-                    <p><strong>Отладка:</strong> обращаюсь к логам приложения и выполняю точечные SQL-запросы к БД, чтобы подтвердить состояние данных и найти расхождение между UI и сервером до оформления баг-репорта.</p>
+                    <p data-i18n="auto_p5" data-i18n-html><strong>Отладка:</strong> обращаюсь к логам приложения и выполняю точечные SQL-запросы к БД, чтобы подтвердить состояние данных и найти расхождение между UI и сервером до оформления баг-репорта.</p>
                 </div>
                 <div class="text-block">
-                    <p>На уровне <strong>Middle / Senior</strong> закладываю архитектуру и структуру автотестов, выделяю переиспользуемые слои; участвую в ревью кода тестов, донастраиваю пайплайн под стабильные прогоны и флейки; при необходимости вовлекаю коллег в практики автоматизации и актуальную документацию по тестам.</p>
+                    <p data-i18n="auto_p6" data-i18n-html>На уровне <strong>Middle / Senior</strong> закладываю архитектуру и структуру автотестов, выделяю переиспользуемые слои; участвую в ревью кода тестов, донастраиваю пайплайн под стабильные прогоны и флейки; при необходимости вовлекаю коллег в практики автоматизации и актуальную документацию по тестам.</p>
                 </div>
             </div>
             <div class="section-next">
-                <button class="btn-next automation-next-btn">Далее</button>
+                <button class="btn-next automation-next-btn" data-i18n="btn_next">Далее</button>
             </div>
         </div>
     </section>
@@ -246,32 +247,52 @@
     <section id="cases" class="section cases-section">
         <div class="section-background parallax-bg"></div>
         <div class="container">
-            <h2 class="section-title">Кейсы / Истории успеха</h2>
+            <h2 class="section-title" data-i18n="cases_title">Кейсы / Истории успеха</h2>
             
             <div class="cases-container">
                 <div class="case-item">
                     <h3 class="case-title" onclick="toggleCase(this)">
-                        Кейс 1: Построение процесса тестирования с нуля (Белая Радуга)
+                        <span data-i18n="case1_title">Кейс 1: Построение процесса тестирования с нуля (Белая Радуга)</span>
                         <span class="case-arrow">▼</span>
                     </h3>
-                    <div class="case-preview">Придя в компанию, я обнаружил отсутствие процесса тестирования...</div>
-                    <div class="case-content">
-                        <p>Придя в компанию, я обнаружил отсутствие процесса тестирования: проверки нерегулярные, требования фиксировались частично, документация отсутствовала, а качество продукта зависело от ручных проверок.</p>
-                        <p>Я выстроил процесс с нуля: анализ продукта, пользовательских сценариев, причин дефектов, коммуникация с командой разработки и продуктами.</p>
-                        <p>Сформировал стратегию тестирования, подготовил чек-листы и тест-кейсы.</p>
-                        <p>Настроил работу с багами: единый формат, приоритеты, статусы, SLA.</p>
-                        <p>Внедрил регулярное регрессионное тестирование.</p>
-                        <p><strong>Результат:</strong> процесс стал прозрачным, количество критических дефектов снизилось, релизы предсказуемы, тестирование стало частью разработки.</p>
+                    <div class="case-preview" data-i18n="case1_preview">Придя в компанию Белая Радуга, я обнаружил, что процесс тестирования не был выстроен...</div>
+                    <div class="case-content" data-i18n="case1_content" data-i18n-html>
+                        <p>Придя в компанию Белая Радуга, я обнаружил, что процесс тестирования не был выстроен. Проверки проводились несистемно, тестовая документация отсутствовала как единый артефакт, а требования часто доходили до команды в устной или неполной форме.</p>
+                        <p>Моей задачей стало выстроить понятный и рабочий процесс тестирования с нуля, адаптированный под реальность команды и продукта.</p>
+                        <p><strong>Первым шагом я провёл анализ текущей ситуации:</strong></p>
+                        <ul>
+                            <li>Изучил продукт и ключевые пользовательские сценарии.</li>
+                            <li>Определил бизнес-критичные зоны и точки риска.</li>
+                            <li>Наладил регулярную коммуникацию с разработкой и продуктовой командой.</li>
+                        </ul>
+                        <p><strong>Далее я выстроил процесс поэтапно:</strong></p>
+                        <ul>
+                            <li>Описал стратегию тестирования и договорился с командой о минимальных стандартах качества.</li>
+                            <li>Начал фиксировать чек-листы и тест-кейсы в Confluence. Это было не самым удобным решением, но позволило создать единое пространство знаний и прозрачность для всей команды.</li>
+                            <li>Ввёл единый подход к баг-репортам: структура, приоритеты, критерии готовности к исправлению.</li>
+                            <li>Настроил регулярное регрессионное тестирование перед релизами.</li>
+                            <li>Подключился к обсуждению требований на раннем этапе и начал находить проблемы до начала разработки.</li>
+                        </ul>
+                        <p><strong>В работе я использовал:</strong></p>
+                        <ul>
+                            <li><strong>Confluence</strong> для хранения тестовой документации, чек-листов и описания процессов.</li>
+                            <li><strong>Jira / YouTrack</strong> для работы с задачами и дефектами.</li>
+                            <li><strong>DevTools</strong> для проверки клиентской логики и сетевых запросов.</li>
+                            <li><strong>Postman</strong> для тестирования API.</li>
+                            <li><strong>SQL</strong> для проверки корректности данных.</li>
+                        </ul>
+                        <p>Со временем процесс стал понятным и предсказуемым для всей команды. Количество критичных дефектов в продакшене снизилось, релизы стали более стабильными, а команда получила общее понимание того, что считается качественным результатом.</p>
+                        <p>В результате тестирование стало частью процесса разработки, а не финальной проверкой перед релизом.</p>
                     </div>
                 </div>
 
                 <div class="case-item">
                     <h3 class="case-title" onclick="toggleCase(this)">
-                        Кейс 2: Снижение количества дефектов в модуле расписания за счёт автотестов (Белая Радуга)
+                        <span data-i18n="case2_title">Кейс 2: Снижение количества дефектов в модуле расписания за счёт автотестов (Белая Радуга)</span>
                         <span class="case-arrow">▼</span>
                     </h3>
-                    <div class="case-preview">Анализ входящих багов показал, что проблемы модуля расписания связаны с бекендом и API...</div>
-                    <div class="case-content">
+                    <div class="case-preview" data-i18n="case2_preview">Анализ входящих багов показал, что проблемы модуля расписания связаны с бекендом и API...</div>
+                    <div class="case-content" data-i18n="case2_content" data-i18n-html>
                         <p>Анализ входящих багов показал, что проблемы модуля расписания связаны с бекендом и API.</p>
                         <p>Определил критичные сценарии, написал автотесты на <span class="highlight-keyword">Node.js</span> для API, проверяющие создание, изменение и удаление элементов, обработку конфликтов, валидацию данных.</p>
                         <p><strong>Результат:</strong> регрессионные дефекты снизились, релизы стали стабильнее, модуль стал надёжной частью системы.</p>
@@ -280,11 +301,11 @@
 
                 <div class="case-item">
                     <h3 class="case-title" onclick="toggleCase(this)">
-                        Кейс 3: Ускорение регрессионного тестирования с помощью UI-автотестов (Белая Радуга)
+                        <span data-i18n="case3_title">Кейс 3: Ускорение регрессионного тестирования с помощью UI-автотестов (Белая Радуга)</span>
                         <span class="case-arrow">▼</span>
                     </h3>
-                    <div class="case-preview">Определил критичные сценарии для регресса, реализовал UI-автотесты на Python Playwright...</div>
-                    <div class="case-content">
+                    <div class="case-preview" data-i18n="case3_preview">Определил критичные сценарии для регресса, реализовал UI-автотесты на Python Playwright...</div>
+                    <div class="case-content" data-i18n="case3_content" data-i18n-html>
                         <p>Определил критичные сценарии для регресса, реализовал UI-автотесты на <span class="highlight-keyword">Python Playwright</span>.</p>
                         <p>Покрыл авторизацию, ключевые бизнес-флоу, стабильность экранов.</p>
                         <p><strong>Результат:</strong> время регрессионного тестирования сократилось, быстрый фидбек, снижение рисков критических дефектов.</p>
@@ -293,27 +314,62 @@
 
                 <div class="case-item">
                     <h3 class="case-title" onclick="toggleCase(this)">
-                        Кейс 4: Локализация мобильного приложения для выхода на арабский рынок (For You)
+                        <span data-i18n="case4_title">Кейс 4: Локализация мобильного приложения для выхода на арабский рынок (For You)</span>
                         <span class="case-arrow">▼</span>
                     </h3>
-                    <div class="case-preview">Проверка корректности перевода, RTL-режим, адаптация интерфейса...</div>
-                    <div class="case-content">
-                        <p>Проверка корректности перевода, RTL-режим, адаптация интерфейса, жестов и навигации на разных устройствах iOS и Android.</p>
-                        <p>Использовал: TestFlight, Google Play Console, Android Studio, <span class="highlight-keyword">BrowserStack</span>, чек-листы.</p>
-                        <p><strong>Результат:</strong> приложение успешно запущено на арабском рынке, подготовлены рекомендации и чек-листы для дальнейшей локализации.</p>
+                    <div class="case-preview" data-i18n="case4_preview">Стартап For You, выход на арабский рынок: локализация, RTL, проверка на iOS и Android...</div>
+                    <div class="case-content" data-i18n="case4_content" data-i18n-html>
+                        <p>Работая в стартапе For You, мобильном приложении для массажа лица на iOS и Android, команда приняла стратегическое решение выйти на арабский рынок. Для этого требовалось полностью локализовать приложение на арабский язык и адаптировать пользовательский опыт под особенности региона.</p>
+                        <p>Арабский язык имеет ряд специфических особенностей, которые влияют не только на тексты, но и на поведение интерфейса. Основной сложностью стало то, что арабский язык использует направление письма справа налево (RTL), что напрямую затрагивает верстку, навигацию и пользовательские сценарии.</p>
+                        <p>Моя задача как QA Engineer заключалась в проверке качества локализации и корректной работы приложения после изменений.</p>
+                        <p><strong>В ходе работы я:</strong></p>
+                        <ul>
+                            <li>Проверил корректность перевода всех пользовательских текстов, уведомлений, onboarding-экранов и paywall.</li>
+                            <li>Выявил проблемы с отображением интерфейса в RTL-режиме, включая смещение элементов, некорректное выравнивание кнопок и иконок.</li>
+                            <li>Проверил адаптацию жестов и навигации с учетом направления интерфейса.</li>
+                            <li>Протестировал работу приложения на разных устройствах и версиях iOS и Android.</li>
+                        </ul>
+                        <p><strong>Для тестирования я использовал:</strong></p>
+                        <ul>
+                            <li><strong>TestFlight</strong> и <strong>Google Play Console</strong> для проверки билдов.</li>
+                            <li><strong>Android Studio Emulator</strong> и <strong>Xcode Simulator</strong> для тестирования разных экранов и конфигураций.</li>
+                            <li><strong>BrowserStack</strong> для проверки приложения на реальных устройствах.</li>
+                            <li><strong>Charles Proxy</strong> для проверки корректной передачи локализованных данных с сервера.</li>
+                            <li>Чек-листы локализации и кросс-платформенного тестирования.</li>
+                        </ul>
+                        <p>В процессе тестирования я обнаружил ряд критичных проблем, включая обрезанный текст, некорректные переносы строк, несоответствие перевода контексту экрана и ошибки в отображении элементов при переключении языка без перезапуска приложения.</p>
+                        <p>Я зафиксировал найденные дефекты в баг-трекере с понятными шагами воспроизведения, скриншотами и видеозаписями экрана. После исправлений со стороны разработки провёл регрессионное тестирование и убедился, что приложение стабильно работает в арабской локализации на обеих платформах.</p>
+                        <p>В результате приложение было успешно запущено на арабском рынке, а команда получила готовые чек-листы и рекомендации по дальнейшему масштабированию локализаций на другие языки.</p>
                     </div>
                 </div>
 
                 <div class="case-item">
                     <h3 class="case-title" onclick="toggleCase(this)">
-                        Кейс 5: Ошибка выбора размера кольца в кастомном конструкторе (Conversion Advocates)
+                        <span data-i18n="case5_title">Кейс 5: Ошибка выбора размера кольца в кастомном конструкторе (Conversion Advocates)</span>
                         <span class="case-arrow">▼</span>
                     </h3>
-                    <div class="case-preview">Выявление проблемы с размером кольца в конструкторе на сайте e-commerce...</div>
-                    <div class="case-content">
-                        <p>Выявление проблемы с размером кольца в конструкторе на сайте e-commerce.</p>
-                        <p>Анализ обращений пользователей, ручное тестирование, проверка логики фронтенда и бекенда через DevTools.</p>
-                        <p><strong>Результат:</strong> исправлена ошибка, количество обращений снизилось, клиент получил прозрачность и уверенность в стабильности функционала.</p>
+                    <div class="case-preview" data-i18n="case5_preview">E-commerce ювелирки: расследование ошибки размера кольца в кастомном конструкторе...</div>
+                    <div class="case-content" data-i18n="case5_content" data-i18n-html>
+                        <p>Во время работы в компании Conversion Advocates к нам обратился постоянный клиент, крупный e-commerce сайт элитных ювелирных изделий. Клиент столкнулся с ростом обращений от покупателей. Пользователи жаловались, что при заказе ювелирного кольца им приходит изделие большего размера, чем тот, который был выбран при оформлении заказа.</p>
+                        <p>Важно, что на сайте используется кастомный конструктор, в котором пользователь самостоятельно собирает дизайн кольца. Клиент выбирает модель, размер, металл, камни и дополнительные элементы, после чего добавляет изделие в корзину.</p>
+                        <p>Мой руководитель поставил задачу провести расследование и определить причину проблемы.</p>
+                        <p><strong>В ходе работы я:</strong></p>
+                        <ul>
+                            <li>Проанализировал обращения пользователей и данные из системы аналитики (Google Analytics, события в воронке, данные заказов).</li>
+                            <li>Сопоставил жалобы клиентов с конкретными сценариями сборки кольца.</li>
+                            <li>Провёл ручное тестирование конструктора с разными комбинациями параметров.</li>
+                            <li>Использовал DevTools для анализа запросов при добавлении товара в корзину.</li>
+                            <li>Проверил логику передачи данных между фронтендом и бекендом.</li>
+                        </ul>
+                        <p>В результате я обнаружил, что при добавлении определённых декоративных элементов кольца в конструкторе, после нажатия кнопки «Добавить в корзину», выбранный размер автоматически увеличивался на один шаг. Ошибка возникала не во всех сценариях, а только при конкретной комбинации параметров дизайна, из-за чего долгое время оставалась незамеченной.</p>
+                        <p>Я зафиксировал баг с подробным описанием шагов воспроизведения, ожидаемого и фактического результата, а также приложил скриншоты и технические детали запроса. После этого подготовил отчёт для команды разработки и бизнеса с описанием влияния проблемы на пользователей и продажи.</p>
+                        <p><strong>После внесения исправлений я:</strong></p>
+                        <ul>
+                            <li>Провёл повторное тестирование всех сценариев кастомизации.</li>
+                            <li>Убедился, что размер кольца корректно сохраняется на всех этапах, от конструктора до оформления заказа.</li>
+                            <li>Проконтролировал выкладку исправлений в продакшен.</li>
+                        </ul>
+                        <p>В результате количество обращений по данной проблеме снизилось, а клиент получил прозрачное понимание причины ошибки и уверенность в стабильности функционала.</p>
                     </div>
                 </div>
             </div>
@@ -325,12 +381,13 @@
         <div class="section-background parallax-bg"></div>
         <div class="container">
             <div class="final-content">
-                <p class="final-quote">Если вы хотите, чтобы ваш продукт был качественным, а конечный пользователь получал удовольствие от его использования — я готов помочь вам достичь этого.</p>
-                <button class="btn-final">Спасибо за внимание! Вопросы?</button>
+                <p class="final-quote" data-i18n="final_quote">Если вы хотите, чтобы ваш продукт был качественным, а конечный пользователь получал удовольствие от его использования — я готов помочь вам достичь этого.</p>
+                <button class="btn-final" data-i18n="final_btn">Спасибо за внимание! Вопросы?</button>
             </div>
         </div>
     </section>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
