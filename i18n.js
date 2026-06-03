@@ -68,7 +68,7 @@
         why_p3:
             '<strong>Automation with intent</strong>: I prioritize critical paths, cover API on <span class="highlight-keyword">Node.js</span>, UI on <span class="highlight-keyword">Python Playwright</span>, hook runs into <span class="highlight-keyword">CI/CD</span> — regression and smoke signal fast in the pipeline and cut busywork.',
         why_p4:
-            'Same stack as below: <span class="highlight-keyword">Node.js</span> for API, <span class="highlight-keyword">Playwright</span> for UI, <span class="highlight-keyword">Postman</span> for contracts, <span class="highlight-keyword">SQL</span> and <span class="highlight-keyword">MySQL</span> for data checks. I deepen <span class="highlight-keyword">TypeScript</span> with tests; <span class="highlight-keyword">Cypress</span> is a comparable swap to Playwright — I can pick it up for your stack.',
+            'I automate critical flows at every layer: API with <span class="highlight-keyword">Node.js</span> and <span class="highlight-keyword">TypeScript</span>, UI with <span class="highlight-keyword">Python Playwright</span>, contracts in <span class="highlight-keyword">Postman</span>, data via <span class="highlight-keyword">SQL</span> and <span class="highlight-keyword">MySQL</span>. Tests run in <span class="highlight-keyword">CI/CD</span> — smoke and regression give the team clear quality signal before release.',
         why_p5:
             'Web and mobile, <span class="highlight-keyword">API</span> and databases — from contract alignment to UI and DB regression.',
         why_p6:
