@@ -631,32 +631,17 @@ body {
     box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
 }
 
-.btn-final {
+.final-thanks {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    letter-spacing: 0.02em;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    border: none;
-    padding: 1.2rem 3rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
-}
-
-.btn-final:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.6);
-    animation: final-glow 1.5s ease-in-out infinite;
-}
-
-@keyframes final-glow {
-    0%, 100% {
-        box-shadow: 0 8px 30px rgba(0, 212, 255, 0.6);
-    }
-    50% {
-        box-shadow: 0 8px 40px rgba(0, 212, 255, 1);
-    }
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 18px rgba(0, 212, 255, 0.35));
 }
 
 /* Responsive Design */

@@ -89,9 +89,7 @@
         skills_p6: 'Strong collaboration with developers, analysts, and product.',
         auto_title: 'Automation stack',
         auto_p1:
-            'Stack: <span class="highlight-keyword">Node.js</span> for API, <span class="highlight-keyword">Python Playwright</span> for UI, <span class="highlight-keyword">Postman</span> for contracts, <span class="highlight-keyword">SQL</span> and <span class="highlight-keyword">MySQL</span>. Tests run in <span class="highlight-keyword">CI/CD</span> — regression and smoke give fast signal in the pipeline.',
-        auto_p2:
-            '<span class="highlight-keyword">TypeScript</span> with tests and typing. <span class="highlight-keyword">Cypress</span> sits at the same abstraction as Playwright — I can onboard quickly for your stack.',
+            'Automation stack: API on <span class="highlight-keyword">Node.js</span> with <span class="highlight-keyword">TypeScript</span> for typing, UI on <span class="highlight-keyword">Python Playwright</span>; contracts in <span class="highlight-keyword">Postman</span>, data via <span class="highlight-keyword">SQL</span> and <span class="highlight-keyword">MySQL</span>. Runs in <span class="highlight-keyword">CI/CD</span> — regression and smoke give fast signal in the pipeline.',
         auto_p3:
             '<strong>Debugging:</strong> In Postman I replay requests and compare status codes, headers, and bodies to specs and logs — separating contract bugs from data issues and narrowing root cause.',
         auto_p4:
