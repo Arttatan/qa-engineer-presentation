@@ -33,7 +33,9 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title fade-in-up" data-i18n="hero_title">Артем — QA Engineer</h1>
+                <p class="hero-subtitle fade-in-up delay-1" data-i18n="hero_ai" data-i18n-html><strong>Активно использую ИИ в ежедневной работе QA:</strong> ускоряю анализ требований, генерацию и ревью тест-кейсов, разбор логов и черновики автотестов — с финальной проверкой и ответственностью за результат. Основные инструменты — <strong>Cursor</strong> и <strong>Claude</strong>; также применяю <strong>ChatGPT</strong>, <strong>GitHub Copilot</strong> и <strong>Gemini</strong> там, где это даёт измеримый выигрыш во времени без потери качества.</p>
                 <p class="hero-subtitle fade-in-up delay-1" data-i18n="hero_p1">QA Engineer с опытом более 4 лет в тестировании веб, мобильных (iOS/Android) и десктопных приложений.</p>
+                <p class="hero-value fade-in-up delay-2" data-i18n="hero_payments" data-i18n-html>Тестировал <strong>payment-critical сценарии</strong> в мобильном приложении и медицинской платформе: успешные и неуспешные оплаты, статусы транзакций, сверка UI, <span class="highlight-keyword">API</span> и данных в <span class="highlight-keyword">SQL</span>.</p>
                 <p class="hero-value fade-in-up delay-2" data-i18n="hero_p2">Есть опыт работы единственным тестировщиком на проекте.</p>
                 <p class="hero-value fade-in-up delay-2" data-i18n="hero_p3">Выстраиваю процесс тестирования с нуля: разрабатываю тестовую стратегию, составляю планы тестирования, внедряю QA-метрики и настраиваю процессы взаимодействия с командой.</p>
                 <p class="hero-value fade-in-up delay-2" data-i18n="hero_p4">Помимо ручного тестирования пишу автотесты и интегрирую их в пайплайн, что повышает стабильность продукта.</p>
@@ -64,12 +66,14 @@
                     <p>Работаю с МИС (медицинской информационной системой), которая хранит всю информацию о пациентах: рентгены, планы лечения, история визитов.</p>
                     <p>Тестирую веб-программу, включающую расписание врачей, запись пациентов, контроль визитов, отчёты и оплату услуг.</p>
                     <p>Тестирую мобильное приложение для пациентов: запись на приём, оплата, просмотр истории лечения.</p>
+                    <p><strong>Платёжные сценарии (web + mobile):</strong> проверяю успешные и неуспешные оплаты, смену статусов транзакций, корректность сумм и отображение ошибок для пользователя. Сверяю цепочку UI → <span class="highlight-keyword">API</span> (<span class="highlight-keyword">Postman</span>) → записи в <span class="highlight-keyword">MySQL</span>, включая повторные попытки оплаты и граничные кейсы (недостаточно средств, прерванная сессия, таймаут).</p>
+                    <p>В МИС отдельно тестирую модуль оплаты услуг в клинике: начисления, частичные оплаты, отмены и соответствие финансовых данных отчётам и карточке пациента.</p>
                     <p>Полностью проверял новый сайт клиники через Figma, сверяя дизайн с макетами.</p>
                     <p>Активно помогаю пользователям программы и собираю обратную связь, чтобы улучшать продукт.</p>
                     <p>Использую Яндекс.Метрику для сбора аналитики по использованию программы.</p>
                     <p>Работаем по <span class="highlight-keyword">Agile</span> в двухнедельных спринтах, тесно взаимодействуя с командой для достижения целей и быстрой обратной связи.</p>
                     <p>Инструменты: <span class="highlight-keyword">KaiTen</span>, <span class="highlight-keyword">Postman</span> для тестирования API, <span class="highlight-keyword">MySQL</span>, <span class="highlight-keyword">Figma</span>, <span class="highlight-keyword">Confluence</span>.</p>
-                    <p>Провожу функциональное тестирование, регрессию, UI/UX.</p>
+                    <p>Провожу функциональное тестирование, регрессию, UI/UX; перед релизами — обязательный регресс payment-critical сценариев.</p>
                     <p>Создаю автотесты для проверки бэкенда на <span class="highlight-keyword">Node.js</span> и UI автотесты на <span class="highlight-keyword">Python Playwright</span>.</p>
                     <p>Создаю и использую чек-листы, тест-кейсы и документацию.</p>
                 </div>
@@ -137,6 +141,9 @@
                 <div class="text-block">
                     <p data-i18n="what_p5">Среду, где можно приносить реальную пользу пользователям, собирать обратную связь и улучшать продукт на основе данных.</p>
                 </div>
+                <div class="text-block">
+                    <p data-i18n="what_p6">Продукт, где качество напрямую влияет на деньги и доверие пользователя — fintech, payments, billing и смежные домены.</p>
+                </div>
             </div>
             <div class="section-next">
                 <button class="btn-next what-next-btn" data-i18n="btn_next">Далее</button>
@@ -164,6 +171,9 @@
                 </div>
                 <div class="text-block">
                     <p data-i18n="why_p5" data-i18n-html>Опыт с веб и мобильными приложениями, <span class="highlight-keyword">API</span> и базами данных — от согласования контрактов до регресса по интерфейсу и данным в БД.</p>
+                </div>
+                <div class="text-block">
+                    <p data-i18n="why_p_pay" data-i18n-html><strong>Payment-critical flows:</strong> проверял оплаты в mobile и web — суммы, статусы транзакций, негативные сценарии и регресс перед релизом; сверка UI ↔ <span class="highlight-keyword">API</span> ↔ <span class="highlight-keyword">SQL</span>.</p>
                 </div>
                 <div class="text-block">
                     <p data-i18n="why_p6" data-i18n-html><span class="highlight-keyword">Agile</span> и <span class="highlight-keyword">Scrum</span>, двухнедельные спринты; веду и актуализирую документацию по тестам, участвую в ревью автотестов и настройке пайплайна под стабильные прогоны.</p>
@@ -285,7 +295,27 @@
 
                 <div class="case-item">
                     <h3 class="case-title" onclick="toggleCase(this)">
-                        <span data-i18n="case2_title">Кейс 2: Снижение количества дефектов в модуле расписания за счёт автотестов (Белая Радуга)</span>
+                        <span data-i18n="case_pay_title">Кейс 2: Тестирование платёжных сценариев (Белая Радуга)</span>
+                        <span class="case-arrow">▼</span>
+                    </h3>
+                    <div class="case-preview" data-i18n="case_pay_preview">Mobile и web: оплаты услуг, статусы транзакций, сверка UI, API и БД...</div>
+                    <div class="case-content" data-i18n="case_pay_content" data-i18n-html>
+                        <p>В сети клиник «Белая Радуга» пациенты оплачивают услуги через мобильное приложение и через веб-модуль МИС. Ошибка в платёжном сценарии напрямую бьёт по выручке и доверию — поэтому эти флоу я выделил как критичные для регресса.</p>
+                        <p><strong>Что тестировал:</strong></p>
+                        <ul>
+                            <li>Успешная оплата, отказ банка, прерванная сессия, повторная попытка после ошибки.</li>
+                            <li>Корректность суммы, комиссий и статуса транзакции в UI и в истории операций.</li>
+                            <li>Сверка данных между экраном оплаты, ответом <span class="highlight-keyword">API</span> (<span class="highlight-keyword">Postman</span>) и записями в <span class="highlight-keyword">MySQL</span>.</li>
+                            <li>Оплата в МИС на стойке: начисление, частичная оплата, отмена и соответствие отчётам.</li>
+                        </ul>
+                        <p><strong>Инструменты:</strong> <span class="highlight-keyword">Postman</span>, <span class="highlight-keyword">DevTools</span>, <span class="highlight-keyword">SQL</span>, чек-листы payment-regression, тест на реальных устройствах iOS/Android.</p>
+                        <p><strong>Результат:</strong> снизилось число инцидентов по оплатам после релизов, команда получила стабильный чек-лист для регресса payment-critical сценариев перед каждым выкатом.</p>
+                    </div>
+                </div>
+
+                <div class="case-item">
+                    <h3 class="case-title" onclick="toggleCase(this)">
+                        <span data-i18n="case2_title">Кейс 3: Снижение количества дефектов в модуле расписания за счёт автотестов (Белая Радуга)</span>
                         <span class="case-arrow">▼</span>
                     </h3>
                     <div class="case-preview" data-i18n="case2_preview">Анализ входящих багов показал, что проблемы модуля расписания связаны с бекендом и API...</div>
@@ -298,7 +328,7 @@
 
                 <div class="case-item">
                     <h3 class="case-title" onclick="toggleCase(this)">
-                        <span data-i18n="case3_title">Кейс 3: Ускорение регрессионного тестирования с помощью UI-автотестов (Белая Радуга)</span>
+                        <span data-i18n="case3_title">Кейс 4: Ускорение регрессионного тестирования с помощью UI-автотестов (Белая Радуга)</span>
                         <span class="case-arrow">▼</span>
                     </h3>
                     <div class="case-preview" data-i18n="case3_preview">Определил критичные сценарии для регресса, реализовал UI-автотесты на Python Playwright...</div>
@@ -311,7 +341,7 @@
 
                 <div class="case-item">
                     <h3 class="case-title" onclick="toggleCase(this)">
-                        <span data-i18n="case4_title">Кейс 4: Локализация мобильного приложения для выхода на арабский рынок (For You)</span>
+                        <span data-i18n="case4_title">Кейс 5: Локализация мобильного приложения для выхода на арабский рынок (For You)</span>
                         <span class="case-arrow">▼</span>
                     </h3>
                     <div class="case-preview" data-i18n="case4_preview">Стартап For You, выход на арабский рынок: локализация, RTL, проверка на iOS и Android...</div>
@@ -342,7 +372,7 @@
 
                 <div class="case-item">
                     <h3 class="case-title" onclick="toggleCase(this)">
-                        <span data-i18n="case5_title">Кейс 5: Ошибка выбора размера кольца в кастомном конструкторе (Conversion Advocates)</span>
+                        <span data-i18n="case5_title">Кейс 6: Ошибка выбора размера кольца в кастомном конструкторе (Conversion Advocates)</span>
                         <span class="case-arrow">▼</span>
                     </h3>
                     <div class="case-preview" data-i18n="case5_preview">E-commerce ювелирки: расследование ошибки размера кольца в кастомном конструкторе...</div>

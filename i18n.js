@@ -15,7 +15,11 @@
         nav_cases: 'Cases',
         nav_final: 'Closing',
         hero_title: 'Artem — QA Engineer',
+        hero_ai:
+            '<strong>I use AI daily in QA work:</strong> faster requirements analysis, test case drafts and review, log triage, and automation stubs — always with human verification and ownership of quality. Primary tools: <strong>Cursor</strong> and <strong>Claude</strong>; also <strong>ChatGPT</strong>, <strong>GitHub Copilot</strong>, and <strong>Gemini</strong> when they save time without cutting corners.',
         hero_p1: 'QA engineer with 4+ years testing web, mobile (iOS/Android), and desktop apps.',
+        hero_payments:
+            'Tested <strong>payment-critical flows</strong> in a patient mobile app and medical platform: success and failure paths, transaction statuses, UI vs <span class="highlight-keyword">API</span> vs <span class="highlight-keyword">SQL</span> alignment.',
         hero_p2: 'Comfortable being the only tester on a project.',
         hero_p3: 'I build QA from the ground up: test strategy, test plans, metrics, and clear collaboration with the team.',
         hero_p4: 'Beyond manual testing, I write automated tests and wire them into the pipeline for a more stable product.',
@@ -27,14 +31,16 @@
         exp_br_sub: 'Dental clinic network, 6 locations',
         exp_br_content:
             '<p>I work with a medical information system that holds patient data: X-rays, treatment plans, visit history.</p>' +
-            '<p>I test the web app for doctor schedules, bookings, visit tracking, reports, and payments.</p>' +
+            '<p>I test the web app for doctor schedules, bookings, visit tracking, reports, and service payments.</p>' +
             '<p>I test the patient mobile app: booking, payments, treatment history.</p>' +
+            '<p><strong>Payment flows (web + mobile):</strong> successful and failed payments, transaction status changes, amount accuracy, and user-facing errors. I validate UI → <span class="highlight-keyword">API</span> (<span class="highlight-keyword">Postman</span>) → <span class="highlight-keyword">MySQL</span>, including retries and edge cases (insufficient funds, interrupted session, timeout).</p>' +
+            '<p>In the MIS I test in-clinic payment module: charges, partial payments, cancellations, and financial data vs reports and patient records.</p>' +
             '<p>I fully validated the new clinic website against Figma designs.</p>' +
             '<p>I support end users of the software and collect feedback to improve the product.</p>' +
             '<p>I use Yandex Metrica for usage analytics.</p>' +
             '<p>We work in <span class="highlight-keyword">Agile</span> two-week sprints, collaborating closely for fast feedback.</p>' +
             '<p>Tools: <span class="highlight-keyword">KaiTen</span>, <span class="highlight-keyword">Postman</span> for API, <span class="highlight-keyword">MySQL</span>, <span class="highlight-keyword">Figma</span>, <span class="highlight-keyword">Confluence</span>.</p>' +
-            '<p>Functional testing, regression, UI/UX.</p>' +
+            '<p>Functional testing, regression, UI/UX; payment-critical regression before every release.</p>' +
             '<p>Backend automation on <span class="highlight-keyword">Node.js</span>; UI automation with <span class="highlight-keyword">Python Playwright</span>.</p>' +
             '<p>I create and use checklists, test cases, and documentation.</p>',
         exp_fy_company: 'For You — QA Engineer',
@@ -60,6 +66,8 @@
         what_p3: 'Room to grow test automation and modern tooling, and to help improve QA processes.',
         what_p4: 'I am fine joining teams with gaps in structure, requirements, or process — and helping fix documentation, workflows, and quality.',
         what_p5: 'An environment where I can deliver real user value, gather feedback, and improve the product with data.',
+        what_p6:
+            'A product where quality directly affects money and user trust — fintech, payments, billing, and related domains.',
         why_title: 'Why hire me',
         why_p1:
             '<strong>Middle / Senior</strong> level: 4+ years in QA across product companies and startups. I treat testing as a core part of the lifecycle, not a last-minute gate.',
@@ -71,6 +79,8 @@
             'I automate critical flows at every layer: API with <span class="highlight-keyword">Node.js</span> and <span class="highlight-keyword">TypeScript</span>, UI with <span class="highlight-keyword">Python Playwright</span>, contracts in <span class="highlight-keyword">Postman</span>, data via <span class="highlight-keyword">SQL</span> and <span class="highlight-keyword">MySQL</span>. Tests run in <span class="highlight-keyword">CI/CD</span> — smoke and regression give the team clear quality signal before release.',
         why_p5:
             'Web and mobile, <span class="highlight-keyword">API</span> and databases — from contract alignment to UI and DB regression.',
+        why_p_pay:
+            '<strong>Payment-critical flows:</strong> tested payments in mobile and web — amounts, transaction statuses, negative paths, pre-release regression; UI ↔ <span class="highlight-keyword">API</span> ↔ <span class="highlight-keyword">SQL</span> alignment.',
         why_p6:
             '<span class="highlight-keyword">Agile</span> and <span class="highlight-keyword">Scrum</span>, two-week sprints; I keep test docs current, review automation, and tune the pipeline for stable runs.',
         why_p7:
@@ -129,19 +139,32 @@
             '</ul>' +
             '<p>Over time the process became predictable for everyone. Critical production defects dropped, releases stabilized, and the team shared a clear bar for “done.”</p>' +
             '<p>Testing became part of development — not a final hurdle before release.</p>',
-        case2_title: 'Case 2: Fewer defects in scheduling via API tests (White rainbow)',
+        case_pay_title: 'Case 2: Payment flow testing (White rainbow)',
+        case_pay_preview: 'Mobile and web: service payments, transaction statuses, UI, API, and DB alignment…',
+        case_pay_content:
+            '<p>At the White rainbow clinic network, patients pay via mobile app and MIS web module. A payment bug hits revenue and trust directly — so I treated these flows as release-critical.</p>' +
+            '<p><strong>What I tested:</strong></p>' +
+            '<ul>' +
+            '<li>Successful payment, bank decline, interrupted session, retry after failure.</li>' +
+            '<li>Amount, fees, and transaction status in UI and payment history.</li>' +
+            '<li>Alignment between payment screen, <span class="highlight-keyword">API</span> response (<span class="highlight-keyword">Postman</span>), and <span class="highlight-keyword">MySQL</span> records.</li>' +
+            '<li>MIS front-desk payments: charges, partial pay, cancellation, report consistency.</li>' +
+            '</ul>' +
+            '<p><strong>Tools:</strong> <span class="highlight-keyword">Postman</span>, <span class="highlight-keyword">DevTools</span>, <span class="highlight-keyword">SQL</span>, payment-regression checklists, real iOS/Android devices.</p>' +
+            '<p><strong>Outcome:</strong> fewer payment incidents after releases; the team got a stable checklist for payment-critical regression before every deploy.</p>',
+        case2_title: 'Case 3: Fewer defects in scheduling via API tests (White rainbow)',
         case2_preview: 'Incoming bugs showed scheduling issues tied to backend and API…',
         case2_content:
             '<p>Bug analysis showed scheduling problems rooted in backend and API behavior.</p>' +
             '<p>I prioritized critical flows and wrote <span class="highlight-keyword">Node.js</span> API tests covering create/update/delete, conflicts, and validation.</p>' +
             '<p><strong>Outcome:</strong> fewer regression defects, more stable releases, and a scheduling module the business could trust.</p>',
-        case3_title: 'Case 3: Faster regression with UI automation (White rainbow)',
+        case3_title: 'Case 4: Faster regression with UI automation (White rainbow)',
         case3_preview: 'I prioritized critical regression paths and shipped UI tests in Python Playwright…',
         case3_content:
             '<p>I prioritized critical regression paths and implemented UI tests with <span class="highlight-keyword">Python Playwright</span>.</p>' +
             '<p>Coverage included login, core business flows, and screen stability.</p>' +
             '<p><strong>Outcome:</strong> shorter regression cycles, faster feedback, lower risk of critical defects.</p>',
-        case4_title: 'Case 4: Mobile app localization for the Middle East (For You)',
+        case4_title: 'Case 5: Mobile localization for the Middle East (For You)',
         case4_preview:
             'For You startup — Arabic market launch: localization, RTL, iOS and Android…',
         case4_content:
@@ -166,7 +189,7 @@
             '<p>I logged critical issues: clipped text, bad line breaks, context-mismatched translations, and UI glitches when switching language without restart.</p>' +
             '<p>Defects went to the tracker with clear steps, screenshots, and screen recordings. After fixes I ran regression and confirmed stable Arabic builds on both platforms.</p>' +
             '<p>We launched successfully in Arabic, with reusable checklists for future locales.</p>',
-        case5_title: 'Case 5: Ring size bug in a custom jewelry builder (Conversion Advocates)',
+        case5_title: 'Case 6: Ring size bug in a custom jewelry builder (Conversion Advocates)',
         case5_preview:
             'Luxury e-commerce: investigating wrong ring size from a custom product builder…',
         case5_content:
